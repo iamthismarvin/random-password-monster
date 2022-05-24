@@ -5,7 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 5050",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "test": "vitest --dom",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "pinia": "^2.0.13",
@@ -14,13 +16,17 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.1",
+    "@vue/test-utils": "^2.0.0-rc.21",
     "autoprefixer": "^10.4.7",
+    "c8": "^7.11.3",
     "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-vue": "^8.2.0",
+    "happy-dom": "^4.0.1",
     "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "tailwindcss": "^3.0.24",
-    "vite": "^2.9.5"
+    "vite": "^2.9.5",
+    "vitest": "^0.12.9"
   }
 }
