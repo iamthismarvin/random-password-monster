@@ -11,5 +11,10 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url)),
     },
   },
-  test: { environment: 'happy-dom' },
+  test: {
+    environment: 'happy-dom',
+    coverage: {
+      reporter: ['text', 'json', 'html'],
+    },
+  },
 })

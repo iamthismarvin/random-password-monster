@@ -6,24 +6,23 @@
       <header class="p-4">
         <AppLogo />
       </header>
-      <main class="p-4">
-        <p>
-          {{
-            generatePassword({
-              length: 20,
-              lowercase: true,
-              uppercase: true,
-              numbers: true,
-              symbols: true,
-            })
-          }}
-        </p>
+      <main>
+        <PasswordGenerator :options="passwordOptions" class="p-4" />
       </main>
     </div>
   </div>
 </template>
 
 <script setup>
+import { reactive } from 'vue'
 import AppLogo from '@/components/AppLogo.vue'
-import generatePassword from '@/utils/generate-password'
+import PasswordGenerator from '@/components/PasswordGenerator.vue'
+
+const passwordOptions = reactive({
+  length: 20,
+  lowercase: true,
+  uppercase: true,
+  numbers: true,
+  symbols: true,
+})
 </script>
