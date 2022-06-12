@@ -1,5 +1,7 @@
 <template>
-  <div class="flex justify-center min-h-screen">
+  <div
+    class="bg-gradient-to-b flex from-primary justify-center min-h-screen text-white to-secondary"
+  >
     <div class="max-w-5xl w-full">
       <header class="p-4">
         <AppLogo />
