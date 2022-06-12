@@ -50,4 +50,10 @@ describe('password should', () => {
     password = generatePassword(passwordOptions)
     expect(password).toBeTruthy()
   })
+
+  test('be at most 254 characters long', () => {
+    passwordOptions.length = 255
+    let password = generatePassword(passwordOptions)
+    expect(password).toBeFalsy()
+  })
 })

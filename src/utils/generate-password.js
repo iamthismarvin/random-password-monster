@@ -13,7 +13,11 @@ export default function ({
   numbers = false,
   symbols = false,
 } = {}) {
-  if (length < 4 || (!lowercase && !uppercase && !numbers && !symbols))
+  if (
+    length < 4 ||
+    length > 254 ||
+    (!lowercase && !uppercase && !numbers && !symbols)
+  )
     return false
 
   const characters = []
