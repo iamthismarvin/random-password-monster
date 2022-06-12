@@ -8,6 +8,12 @@
       </header>
       <main>
         <PasswordGenerator :options="passwordOptions" class="p-4" />
+        <PasswordOptions
+          class="p-4"
+          :options="passwordOptions"
+          @toggle-option="toggleOption"
+          @update-length="updateLength"
+        />
       </main>
     </div>
   </div>
@@ -15,8 +21,10 @@
 
 <script setup>
 import { reactive } from 'vue'
+
 import AppLogo from '@/components/AppLogo.vue'
 import PasswordGenerator from '@/components/PasswordGenerator.vue'
+import PasswordOptions from '@/components/PasswordOptions.vue'
 
 const passwordOptions = reactive({
   length: 20,
@@ -25,4 +33,8 @@ const passwordOptions = reactive({
   numbers: true,
   symbols: true,
 })
+
+const toggleOption = (option) =>
+  (passwordOptions[option] = !passwordOptions[option])
+const updateLength = (length) => (passwordOptions.length = length)
 </script>
