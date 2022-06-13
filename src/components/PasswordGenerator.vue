@@ -70,6 +70,6 @@ const copyPassword = (password) => {
 }
 
 watch(password, (value) => {
-  if (value.length) isPasswordCopied.value = false
+  if (isPasswordCopied.value && value.length) isPasswordCopied.value = false
 })
 </script>
