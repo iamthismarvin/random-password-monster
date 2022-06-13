@@ -3,7 +3,12 @@
     class="bg-gradient-to-b flex from-primary justify-center min-h-screen text-white to-secondary"
   >
     <div class="max-w-5xl w-full">
-      <header class="p-4">
+      <header class="flex items-end p-4">
+        <img
+          src="@/assets/images/random_password_monster.svg"
+          alt="Random Password Monster"
+          class="animate-bounce antialiased h-16 mr-2"
+        />
         <AppLogo />
       </header>
       <main>
