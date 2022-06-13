@@ -41,7 +41,7 @@
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
 import generatePassword from '@/utils/generate-password'
 
 const props = defineProps({
@@ -62,11 +62,14 @@ const isGenerateButtonDisabled = computed(
 const getPassword = (passwordOptions) => {
   if (isGenerateButtonDisabled.value) return
   password.value = generatePassword(passwordOptions)
-  isPasswordCopied.value = false
   if (window.pageYOffset !== 0) scrollTo({ top: 0, behavior: 'smooth' })
 }
 const copyPassword = (password) => {
   navigator.clipboard.writeText(password)
   isPasswordCopied.value = true
 }
+
+watch(password, (value) => {
+  if (value.length) isPasswordCopied.value = false
+})
 </script>
