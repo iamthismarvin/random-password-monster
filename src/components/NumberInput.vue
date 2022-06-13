@@ -69,7 +69,7 @@ const validateInput = () => {
 
 <style scoped>
 .length-modifier {
-  @apply bg-secondary font-bold h-12 rounded-full shadow-lg text-2xl text-white transition-all w-1/2 first:mr-2;
+  @apply bg-secondary font-bold h-12 rounded-full shadow-lg text-2xl text-white transition-all w-1/2 first:mr-2 hover:scale-105;
 }
 
 /* Hide input number arrows */
