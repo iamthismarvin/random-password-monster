@@ -11,7 +11,7 @@
       <div class="flex">
         <button
           @click="getPassword(props.options)"
-          class="bg-red-500 font-extrabold p-3 rounded-full shadow-xl text-secondary transition-all w-full hover:scale-105"
+          class="bg-red-500 font-extrabold p-3 rounded-full shadow-xl text-secondary transition-all w-full hover:scale-105 sm:hover:scale-x-[1.015] sm:hover:scale-y-[1.025]"
           :class="[
             {
               'disabled bg-slate-600 ': isGenerateButtonDisabled,
