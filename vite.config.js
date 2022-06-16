@@ -13,8 +13,11 @@ export default defineConfig({
         'favicon.svg',
         'favicon.ico',
         'robots.txt',
-        'apple-touch-icon.png',
+        'icons/apple-touch-icon.png',
       ],
+      workbox: {
+        globPatterns: ['**/*.{js,css,html,svg,ttf,woff,woff2}'],
+      },
       manifest: {
         name: 'Random Password Monster',
         short_name: 'Random Password Monster',
