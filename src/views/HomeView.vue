@@ -12,6 +12,7 @@
           />
           <AppLogo />
         </div>
+        Staging
         <div class="flex items-center">
           <a
             href="https://github.com/iamthismarvin/random-password-monster"
