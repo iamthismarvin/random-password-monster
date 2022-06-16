@@ -24,20 +24,50 @@ export default defineConfig({
         background_color: '#321e55',
         icons: [
           {
-            src: 'pwa-192x192.png',
+            src: 'icons/pwa-192x192.png',
             sizes: '192x192',
             type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'icons/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
           },
           {
-            src: 'pwa-512x512.png',
+            src: 'icons/pwa-512x512.png',
             sizes: '512x512',
             type: 'image/png',
             purpose: 'any maskable',
+          },
+          {
+            src: 'icons/android-chrome-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/android-chrome-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/mstile-70x70.png',
+            sizes: '70x70',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/mstile-150x150.png',
+            sizes: '150x150',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/mstile-310x150.png',
+            sizes: '310x150',
+            type: 'image/png',
+          },
+          {
+            src: 'icons/mstile-310x310.png',
+            sizes: '310x310',
+            type: 'image/png',
           },
         ],
       },
