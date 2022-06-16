@@ -17,3 +17,7 @@ html {
   font-weight: 400;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+}
+
