@@ -1,5 +1,5 @@
 <template>
-  <h1 class="flex flex-col font-bold leading-none text-2xl">
+  <h1 class="flex flex-col leading-none">
     <span>Random</span>
     <span>Password<span class="text-red-500">.</span></span>
     <span>Monster</span>

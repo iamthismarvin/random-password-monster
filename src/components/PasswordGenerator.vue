@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3 class="font-bold mb-4 text-xl">Password</h3>
+    <h2>Password</h2>
     <div class="bg-primary p-4 rounded-2xl shadow-xl">
       <div v-if="password" class="flex items-center justify-center pb-4">
         <textarea

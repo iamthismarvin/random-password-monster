@@ -1,6 +1,6 @@
 <template>
   <section>
-    <h3 class="font-bold mb-4 text-xl">Options</h3>
+    <h2>Options</h2>
     <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
       <div class="mb-8 sm:mb-0">
         <h4 class="mb-4 font-bold text-md text-center">Length</h4>

@@ -21,3 +21,18 @@ button {
   -webkit-tap-highlight-color: transparent;
 }
 
+h1,h2,h3 {
+  @apply font-bold;
+}
+
+h1 {
+  @apply text-2xl
+}
+
+h2 {
+  @apply mb-4 text-xl
+}
+
+h3 {
+  @apply my-4 text-lg
+}

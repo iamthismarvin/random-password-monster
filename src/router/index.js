@@ -8,6 +8,11 @@ const router = createRouter({
       name: 'home',
       component: () => import('@/views/HomeView.vue'),
     },
+    {
+      path: '/pwa',
+      name: 'pwa',
+      component: () => import('@/views/PWAView.vue'),
+    },
   ],
 })
 
