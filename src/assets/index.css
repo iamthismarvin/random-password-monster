@@ -12,6 +12,10 @@
        font-style: normal;
 }
 
+* {
+  touch-action: manipulation;
+}
+
 html {
   font-family: 'Satoshi-Variable';
   font-weight: 400;
